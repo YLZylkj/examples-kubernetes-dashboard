@@ -1,0 +1,33 @@
+{
+    "title": "Kubernetes Dashboard",
+    "description": "Run and access the Kubernetes Dashboard",
+    "details": {
+        "intro": {
+            "text": "intro.md"
+        },
+        "steps": [
+            {
+                "title": "Run and access",
+                "text": "step1.md"
+            }
+        ],
+        "assets": {
+            "host01": [
+                {
+                    "file": "dashboard.yaml",
+                    "target": "/root",
+                    "chmod": "+w"
+                }
+            ]
+        }
+    },
+    "backend": {
+        "imageid": "alpine:latest",
+        "expose": 8080,
+        "layout": "",
+        "skins": "",
+        "tools": "idea | terminal | notebook",
+        "cpu": 1,
+        "memory": 1024
+    }
+}
